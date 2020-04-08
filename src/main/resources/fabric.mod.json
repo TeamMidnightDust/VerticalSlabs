@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "verticalslabs",
+  "version": "1.0.0",
+
+  "name": "Vertical Slabs",
+  "description": "Adds vertical slabs to the game!",
+  "authors": [
+    "Motschen",
+    "TeamMidnightDust"
+  ],
+  "contact": {
+    "homepage": "https://www.midnightdust.eu/",
+    "issues": "https://github.com/TeamMidnightDust/verticalslabs/issues"
+  },
+
+  "license": "GNU LGPLv2",
+  "icon": "assets/verticalslabs/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "eu.midnightdust.motschen.verticalslabs.VerticalSlabs"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

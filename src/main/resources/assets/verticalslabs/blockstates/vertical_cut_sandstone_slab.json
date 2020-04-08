@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "block/cut_sandstone_slab", "x": 90, "uvlock": true },
+		"facing=east": { "model": "block/cut_sandstone_slab", "x": 90, "y": 90, "uvlock": true },
+		"facing=south": { "model": "block/cut_sandstone_slab", "x": 90, "y": 180, "uvlock": true },
+		"facing=west": { "model": "block/cut_sandstone_slab", "x": 90, "y": 270, "uvlock": true }
+    }
+}

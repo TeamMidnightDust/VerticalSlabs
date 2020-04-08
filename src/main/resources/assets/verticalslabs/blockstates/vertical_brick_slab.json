@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "block/brick_slab", "x": 90, "uvlock": true },
+		"facing=east": { "model": "block/brick_slab", "x": 90, "y": 90, "uvlock": true },
+		"facing=south": { "model": "block/brick_slab", "x": 90, "y": 180, "uvlock": true },
+		"facing=west": { "model": "block/brick_slab", "x": 90, "y": 270, "uvlock": true }
+    }
+}
