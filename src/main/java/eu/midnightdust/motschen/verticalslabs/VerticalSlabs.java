@@ -21,6 +21,8 @@ public class VerticalSlabs implements ModInitializer {
     public static final Block VERTICAL_JUNGLE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2f).breakByTool(FabricToolTags.AXES).build());
     public static final Block VERTICAL_ACACIA_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2f).breakByTool(FabricToolTags.AXES).build());
     public static final Block VERTICAL_DARK_OAK_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2f).breakByTool(FabricToolTags.AXES).build());
+    public static final Block VERTICAL_CRIMSON_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2f).breakByTool(FabricToolTags.AXES).build());
+    public static final Block VERTICAL_WARPED_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2f).breakByTool(FabricToolTags.AXES).build());
     public static final Block VERTICAL_STONE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
     public static final Block VERTICAL_SMOOTH_STONE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
     public static final Block VERTICAL_SANDSTONE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
@@ -49,6 +51,9 @@ public class VerticalSlabs implements ModInitializer {
     public static final Block VERTICAL_RED_NETHER_BRICK_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
     public static final Block VERTICAL_POLISHED_ANDESITE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
     public static final Block VERTICAL_DIORITE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
+    public static final Block VERTICAL_BLACKSTONE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
+    public static final Block VERTICAL_POLISHED_BLACKSTONE_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
+    public static final Block VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB = new VerticalSlab(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2f).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).build());
 
     @Override
     public void onInitialize() {
@@ -64,6 +69,10 @@ public class VerticalSlabs implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_acacia_slab"), new BlockItem(VERTICAL_ACACIA_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
         Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_dark_oak_slab"), VERTICAL_DARK_OAK_SLAB);
         Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_dark_oak_slab"), new BlockItem(VERTICAL_DARK_OAK_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
+        Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_crimson_slab"), VERTICAL_CRIMSON_SLAB);
+        Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_crimson_slab"), new BlockItem(VERTICAL_CRIMSON_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
+        Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_warped_slab"), VERTICAL_WARPED_SLAB);
+        Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_warped_slab"), new BlockItem(VERTICAL_WARPED_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
         Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_stone_slab"), VERTICAL_STONE_SLAB);
         Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_stone_slab"), new BlockItem(VERTICAL_STONE_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
         Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_smooth_stone_slab"), VERTICAL_SMOOTH_STONE_SLAB);
@@ -120,5 +129,11 @@ public class VerticalSlabs implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_polished_andesite_slab"), new BlockItem(VERTICAL_POLISHED_ANDESITE_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
         Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_diorite_slab"), VERTICAL_DIORITE_SLAB);
         Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_diorite_slab"), new BlockItem(VERTICAL_DIORITE_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
+        Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_blackstone_slab"), VERTICAL_BLACKSTONE_SLAB);
+        Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_blackstone_slab"), new BlockItem(VERTICAL_BLACKSTONE_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
+        Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_polished_blackstone_slab"), VERTICAL_POLISHED_BLACKSTONE_SLAB);
+        Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_polished_blackstone_slab"), new BlockItem(VERTICAL_POLISHED_BLACKSTONE_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
+        Registry.register(Registry.BLOCK, new Identifier("verticalslabs","vertical_polished_blackstone_brick_slab"), VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB);
+        Registry.register(Registry.ITEM, new Identifier("verticalslabs","vertical_polished_blackstone_brick_slab"), new BlockItem(VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB, new Item.Settings().group(VerticalSlabs.VerticalSlabsGroup)));
     }
 }

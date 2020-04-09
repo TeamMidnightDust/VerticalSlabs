@@ -1,10 +1,6 @@
 package eu.midnightdust.motschen.verticalslabs;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockRenderType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.entity.EntityContext;
+import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -40,12 +36,6 @@ public class VerticalSlab extends HorizontalFacingBlock {
     }
 
     @Override
-    public Identifier getDropTableId() {
-        Identifier identifier = Registry.BLOCK.getId(this);
-        return new Identifier(identifier.getNamespace(), "blocks/" + identifier.getPath());
-    }
-
-    @Override
     public BlockRenderType getRenderType(BlockState blockState_1) {
         return BlockRenderType.MODEL;
     }
@@ -63,7 +53,7 @@ public class VerticalSlab extends HorizontalFacingBlock {
         builder.add(WATERLOGGED, FACING);
     }
     @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, EntityContext context) {
+    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         switch (state.get(FACING)) {
             case NORTH: return NORTH_SHAPE;
             case EAST: return EAST_SHAPE;
