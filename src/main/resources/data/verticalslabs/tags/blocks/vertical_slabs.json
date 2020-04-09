@@ -7,6 +7,8 @@
     "verticalslabs:vertical_jungle_slab",
     "verticalslabs:vertical_acacia_slab",
     "verticalslabs:vertical_dark_oak_slab",
+	"verticalslabs:vertical_crimson_slab",
+	"verticalslabs:vertical_warped_slab",
     "verticalslabs:vertical_stone_slab",
     "verticalslabs:vertical_smooth_stone_slab",
     "verticalslabs:vertical_sandstone_slab",
@@ -33,6 +35,9 @@
 	"verticalslabs:vertical_andesite_slab",
 	"verticalslabs:vertical_red_nether_brick_slab",
 	"verticalslabs:vertical_polished_andesite_slab",
-	"verticalslabs:vertical_diorite_slab"
+	"verticalslabs:vertical_diorite_slab",
+	"verticalslabs:vertical_blackstone_slab",
+	"verticalslabs:vertical_polished_blackstone_slab",
+	"verticalslabs:vertical_polished_blackstone_brick_slab"
   ]
 }
