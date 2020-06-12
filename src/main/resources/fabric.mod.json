@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "verticalslabs",
-  "version": "1.0.1",
+  "version": "1.3.0",
 
   "name": "Vertical Slabs",
   "description": "Adds vertical slabs to the game!",
@@ -14,7 +14,7 @@
     "issues": "https://github.com/TeamMidnightDust/verticalslabs/issues"
   },
 
-  "license": "GNU LGPLv2",
+  "license": "MIT",
   "icon": "assets/verticalslabs/icon.png",
 
   "environment": "*",
